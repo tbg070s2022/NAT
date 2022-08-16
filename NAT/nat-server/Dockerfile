@@ -11,6 +11,11 @@ RUN apt-get install -y iproute2
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/
 
 ADD start.sh start.sh
+ADD start.sh sleep.sh
+
 RUN chmod +x start.sh
 
-CMD ["./start.sh"]
+ENTRYPOINT ["tail", "-f", "/dev/null"]
+
+
+# CMD ["./start.sh"]
