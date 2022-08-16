@@ -10,7 +10,4 @@ RUN apt-get install -y traceroute
 RUN apt-get install -y iproute2
 # RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/
 
-ADD setup_1.sh setup_1.sh
-ADD setup_2.sh setup_2.sh
-
 CMD ["tail", "-f", "/dev/null"]
