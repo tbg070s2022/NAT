@@ -25,8 +25,10 @@
     # run ./start.sh in docker
 
     cd nat-client
+    ./create_setup_shs.sh
+    
     ./run_interactive_1.sh 
-    # run setup_1.sh in docker (once ipleri kontrol edip duzelt)
+    # run /setup/setup.sh in docker
     ./run_interactive_2.sh
-    # run setup_2.sh in docker (once ipleri kontrol edip duzelt)
+    # run /setup/setup.sh in docker
 
