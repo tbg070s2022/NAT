@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 route del default
 ifconfig eth0 down
